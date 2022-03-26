@@ -55,7 +55,7 @@ class IspSurvey implements DataPatchInterface
         $customerSetup->addAttribute(Customer::ENTITY, 'allow_detect_isp', [
             'type' => 'int',
             'input' => 'boolean',
-            'source' => Magento\Eav\Model\Entity\Attribute\Source\Boolean::class,
+            'source' => \Magento\Eav\Model\Entity\Attribute\Source\Boolean::class,
             'label' => 'allow_detect_isp',
             'required' => false,
             'default' => 0,
