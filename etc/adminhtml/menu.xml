@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Parth, Inc. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magento_Sales::sales_customer_isp" title="Customer Orders with ISP" translate="title" module="Kemana_IspSurvey" sortOrder="13" parent="Magento_Sales::sales_operation" action="ispsurvey/order" resource="Magento_Sales::sales_order"/>
+    </menu>
+</config>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Parth, Inc. All rights reserved.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="form.additional.info">
+            <block class="Magento\Customer\Block\Form\Edit" name="form_additional_info_allow_detect_isp" template="Kemana_IspSurvey::allowDetectIsp.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

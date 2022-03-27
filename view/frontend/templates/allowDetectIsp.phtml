@@ -1,0 +1,26 @@
+<?php
+/**
+ * Copyright © Parth. All rights reserved.
+ */
+?>
+<?php
+    $customer = $block->getCustomer();
+    $allowDetectIsp = false;
+
+if ($customer !== null && $customer->getId() && $customer->getCustomAttribute('allow_detect_isp')) {
+    $allowDetectIsp = (Int)$customer->getCustomAttribute('allow_detect_isp')->getValue();
+}
+?>
+<div class="field allow_detect_isp">
+    <div class="control">
+        <input type="checkbox" 
+            id="allow_detect_isp" 
+            name="allow_detect_isp" 
+            class="input-checkbox checkbox" 
+            <?php if ($allowDetectIsp): ?>checked="checked"<?php endif; ?> 
+            value="1">
+        <label for="allow_detect_isp" class="label">
+            <?= $block->escapeHtml(__('Allow Detect Isp')) ?>
+        </label>
+    </div>
+</div>
